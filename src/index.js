@@ -25,7 +25,7 @@ var quoteUrlOptions = {
 
 //Default entrypoint for the root
 //Requesting root will cause a quote to be requested
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
     request.post(quoteUrlOptions, function (error, response, body) {
         if (error) {
             console.log('Error getting quote : ', error)
